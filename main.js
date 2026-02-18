@@ -57,7 +57,8 @@ animateParticles();
 const portfolioItems = [
     { 
         type: 'image', title: 'Product Showcase', category: '3D Modeling', aspect: 'aspect-[3/4]', 
-        image: 'assets/000_(7).png', 
+        // RENAMED: product-showcase.png
+        image: 'assets/product-showcase.png', 
         gradient: 'from-purple-900 to-indigo-900', icon: 'fas fa-user-astronaut', iconColor: 'text-purple-300',
         description: "A mix of 3D modeling and AI for a perfect and clean result",
         tags: ["Blender", "AI"]
@@ -65,14 +66,16 @@ const portfolioItems = [
     { 
         type: 'slider', title: 'Behind the scene', category: '3D Animation', aspect: 'aspect-[4/3]', 
         beforeLabel: 'Wireframe', afterLabel: 'Render',
-        beforeImage: 'assets/0000004.jpg',
-        afterImage: 'assets/0000004-.jpg',
+        // RENAMED: engine-wireframe.jpg & engine-render.jpg
+        beforeImage: 'assets/engine-wireframe.jpg',
+        afterImage: 'assets/engine-render.jpg',
         description: "An Engine Model and animation showing the underlying topology vs the final path-traced render. Created in Blender using Cycles.",
         tags: ["Blender", "Cycles", "Hard Surface"]
     },
     { 
         type: 'video', title: '3D Animation', category: 'Animation', duration: '0:50', aspect: 'aspect-square',
-        videoSrc: 'assets/000-000.mp4', 
+        // RENAMED: ac-animation.mp4
+        videoSrc: 'assets/ac-animation.mp4', 
         description: "A 3D Animation showcasing the new Generation of Air Conditioners or as they call it Polymer Cooler",
         tags: ["Blender"]
     },
@@ -82,14 +85,69 @@ const portfolioItems = [
         description: "A fun API integration I added to keep things interesting!",
         tags: ["API", "JavaScript"]
     },
-     { type: 'image', title: 'Product Viz', category: 'Rendering', aspect: 'aspect-video', image: 'assets/000_(9).png', gradient: 'from-lime-900 to-emerald-900', icon: 'fas fa-box', iconColor: 'text-lime-300', description: "Photorealistic product visualization for a commercial client. Focused on studio lighting and material accuracy.", tags: ["Blender", "AI"] },
-    { type: 'image', title: 'Product Viz', category: 'Realistic Rendering', aspect: 'aspect-square', image: 'assets/000-000-0.jpg', gradient: 'from-teal-900 to-green-900', icon: 'fas fa-dice-d20', iconColor: 'text-teal-300', description: "helping someone having his pot eternally", tags: ["Blender"] },
-    { type: 'image', title: 'Product Viz', category: 'Rendering', aspect: 'aspect-[3/4]', image: 'assets/000_(13).png', gradient: 'from-green-950 to-emerald-950', icon: 'fas fa-dragon', iconColor: 'text-green-400', description: "Product advertisment design", tags: ["Blender", "AI"] },
-    { type: 'video', title: 'Announcment', category: 'Animation', duration: '1:34', aspect: 'aspect-video', videoSrc: 'assets/Video.mp4', description: "the announcement motiongraphic for hackathon at Sharif University", tags: ["After Effects" , "Illustrator"] },
-    { type: 'image', title: 'Product viz', category: 'Modeling', aspect: 'aspect-square', image: 'assets/000_(12).png', gradient: 'from-stone-900 to-emerald-950', icon: 'fas fa-robot', iconColor: 'text-stone-400', description: "Mixing AI with 3D modeling to reach higher heights", tags: ["Blender", "AI"] },
-	{ type: 'image', title: 'Product viz', category: 'Modeling', aspect: 'aspect-square', image: 'assets/000_(17).png', gradient: 'from-stone-900 to-emerald-950', icon: 'fas fa-robot', iconColor: 'text-stone-400', description: "Grabbing AI tools to help and make a better cloth!", tags: ["Blender", "AI"] },
-	{ type: 'image', title: 'Product viz', category: 'Modeling', aspect: 'aspect-square', image: 'assets/00-000-0.jpg', gradient: 'from-stone-900 to-emerald-950', icon: 'fas fa-robot', iconColor: 'text-stone-400', description: "3D modeling of SunScreens", tags: ["Blender"] },
-	{ type: 'image', title: 'Product viz', category: 'Modeling', aspect: 'aspect-square', image: 'assets/000_(15).jpg', gradient: 'from-stone-900 to-emerald-950', icon: 'fas fa-robot', iconColor: 'text-stone-400', description: "showcasing an eye care product by mixing 3D modeling and AI", tags: ["Blender", "AI"] }
+    { 
+        type: 'image', title: 'Product Viz', category: 'Rendering', aspect: 'aspect-video', 
+        // RENAMED: product-viz-1.png
+        image: 'assets/product-viz-1.png', 
+        gradient: 'from-lime-900 to-emerald-900', icon: 'fas fa-box', iconColor: 'text-lime-300', 
+        description: "Photorealistic product visualization for a commercial client. Focused on studio lighting and material accuracy.", 
+        tags: ["Blender", "AI"] 
+    },
+    { 
+        type: 'image', title: 'Product Viz', category: 'Realistic Rendering', aspect: 'aspect-square', 
+        // RENAMED: product-viz-2.jpg
+        image: 'assets/product-viz-2.jpg', 
+        gradient: 'from-teal-900 to-green-900', icon: 'fas fa-dice-d20', iconColor: 'text-teal-300', 
+        description: "helping someone having his pot eternally", 
+        tags: ["Blender"] 
+    },
+    { 
+        type: 'image', title: 'Product Viz', category: 'Rendering', aspect: 'aspect-[3/4]', 
+        // RENAMED: product-viz-3.png
+        image: 'assets/product-viz-3.png', 
+        gradient: 'from-green-950 to-emerald-950', icon: 'fas fa-dragon', iconColor: 'text-green-400', 
+        description: "Product advertisment design", 
+        tags: ["Blender", "AI"] 
+    },
+    { 
+        type: 'video', title: 'Announcment', category: 'Animation', duration: '1:34', aspect: 'aspect-video', 
+        // RENAMED: announcement.mp4 (Note lowercase 'a')
+        videoSrc: 'assets/announcement.mp4', 
+        description: "the announcement motiongraphic for hackathon at Sharif University", 
+        tags: ["After Effects" , "Illustrator"] 
+    },
+    { 
+        type: 'image', title: 'Product viz', category: 'Modeling', aspect: 'aspect-square', 
+        // RENAMED: product-viz-4.png
+        image: 'assets/product-viz-4.png', 
+        gradient: 'from-stone-900 to-emerald-950', icon: 'fas fa-robot', iconColor: 'text-stone-400', 
+        description: "Mixing AI with 3D modeling to reach higher heights", 
+        tags: ["Blender", "AI"] 
+    },
+    { 
+        type: 'image', title: 'Product viz', category: 'Modeling', aspect: 'aspect-square', 
+        // RENAMED: product-viz-5.png
+        image: 'assets/product-viz-5.png', 
+        gradient: 'from-stone-900 to-emerald-950', icon: 'fas fa-robot', iconColor: 'text-stone-400', 
+        description: "Grabbing AI tools to help and make a better cloth!", 
+        tags: ["Blender", "AI"] 
+    },
+    { 
+        type: 'image', title: 'Product viz', category: 'Modeling', aspect: 'aspect-square', 
+        // RENAMED: sunscreen.jpg
+        image: 'assets/sunscreen.jpg', 
+        gradient: 'from-stone-900 to-emerald-950', icon: 'fas fa-robot', iconColor: 'text-stone-400', 
+        description: "3D modeling of SunScreens", 
+        tags: ["Blender"] 
+    },
+    { 
+        type: 'image', title: 'Product viz', category: 'Modeling', aspect: 'aspect-square', 
+        // RENAMED: eye-care.jpg
+        image: 'assets/eye-care.jpg', 
+        gradient: 'from-stone-900 to-emerald-950', icon: 'fas fa-robot', iconColor: 'text-stone-400', 
+        description: "showcasing an eye care product by mixing 3D modeling and AI", 
+        tags: ["Blender", "AI"] 
+    }
 ];
 
 const container = document.getElementById('gallery-container');
