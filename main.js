@@ -79,12 +79,12 @@ const portfolioItems = [
         description: "A 3D Animation showcasing the new Generation of Air Conditioners or as they call it Polymer Cooler",
         tags: ["Blender"]
     },
-    { 
-        type: 'quote', text: "Loading Fact...", 
-        author: "System", gradient: 'from-slate-800 to-slate-900',
-        description: "A fun API integration I added to keep things interesting!",
-        tags: ["API", "JavaScript"]
-    },
+    // { 
+    //    type: 'quote', text: "Loading Fact...", 
+     //   author: "System", gradient: 'from-slate-800 to-slate-900',
+     //   description: "A fun API integration I added to keep things interesting!",
+     //   tags: ["API", "JavaScript"]
+   // }, 
     { 
         type: 'image', title: 'Product Viz', category: 'Rendering', aspect: 'aspect-video', 
         // RENAMED: product-viz-1.png
